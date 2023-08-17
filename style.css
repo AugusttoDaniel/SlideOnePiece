@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+  width: 100%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c7a963;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav li a:hover {
+  background-color: #ddd;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.menu-icon {
+  width: 170px;
+  height: 100px;
+}
+
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.layer:nth-child(2) {
+  z-index: 1;
+}
+
+.layer:nth-child(3) {
+  z-index: 2;
+}
+.layer:nth-child(4) {
+  z-index: 3;
+}
+@keyframes moveCloud {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.cloud {
+  animation: moveCloud 10s linear infinite;
+}
+.character-container {
+  position: relative;
+}
+
+.character-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+}
+.title{
+  font-family: "Stencil", sans-serif;
+  color: white;
+}
+
+p {
+  font-size: 200%;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.image-container h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  font-size: 4em; 
+  color: white;
+  
+}

@@ -101,13 +101,13 @@ p {
   z-index: 1; /* Coloca o texto na frente do overlay */
 }
 
-#imagens {
+#fim {
   background-image: url("Imagens/Imagem25.png");
   background-repeat: no-repeat;
   height: 1080px;
   position: relative;
 }
-#imagens::before {
+#fim::before {
   content: "";
   position: absolute;
   top: 0;

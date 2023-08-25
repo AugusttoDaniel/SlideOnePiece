@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 nav {
   display: flex;
   align-items: center;
@@ -96,6 +97,7 @@ p {
   font-size: 400%;
   text-align: center;
   position: relative;
+  justify-content: center;
   z-index: 1; /* Coloca o texto na frente do overlay */
 }
 
@@ -104,7 +106,6 @@ p {
   background-repeat: no-repeat;
   height: 1080px;
   position: relative;
-  display: flex;
 }
 #imagens::before {
   content: "";
@@ -115,18 +116,13 @@ p {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   pointer-events: none;
-  display: flex;
 }
-
-.textoBasoseira {
-  font-family: "Stencil", sans-serif;
-  color: white;
-  font-size: 400%;
-  text-align: center;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
+.center-content {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajuste a altura conforme necessário */
+  text-align: center;
 }
 
 #episódios {
